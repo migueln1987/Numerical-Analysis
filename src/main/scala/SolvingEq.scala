@@ -8,11 +8,14 @@ object SolvingEq {
     else IVT(f, x + 1)
   }
 
+  def bisection(f: Double => Double, a: Double, b: Double, TOL: Double): Double = ???
+
   def main(args: Array[String]): Unit = {
     println("f(x) = x^2 + x - 3")
     println("f(0) = " + f(0))
     println("f(1) = " + f(1))
     println("f(2) = " + f(2))
-    println(IVT(f, 0))
+    val interval = IVT(f, 0)
+    println(interval)
   }
 }
